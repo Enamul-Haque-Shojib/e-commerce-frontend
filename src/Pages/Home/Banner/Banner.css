@@ -1,0 +1,16 @@
+.hu{
+    background-color: black;
+    color: white;
+    position: relative;
+}
+
+.hu img{
+    opacity: 0.6;
+}
+
+.leg{
+    position: absolute;
+    color: white;
+    left: 170px;
+    bottom: 350px;
+}
