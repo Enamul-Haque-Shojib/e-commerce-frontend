@@ -8,7 +8,7 @@ const Wish = ({wish, handleWishDelete}) => {
           <div className="">
            
           <div className="card w-80 h-full bg-white shadow-xl">
-        <figure className="p-5"><img src={`http://127.0.0.1:8000/${image}/`} alt="Shoes" /></figure>
+        <figure className="p-5"><img src={`https://enamulhaque.pythonanywhere.com/${image}/`} alt="Shoes" /></figure>
         <div className="card-body text-base">
           <h2 className="card-title">{name}</h2>
           <p>Price: {price}</p>

@@ -12,7 +12,7 @@ const CartList = () => {
     // console.log('>>>>>>>>>>>',clothCarts);
     useEffect(()=>{
         const clothWishFunction=async()=>{
-            await axios.post(`http://127.0.0.1:8000/cloth/clothcartlist/`,{
+            await axios.post(`https://enamulhaque.pythonanywhere.com/cloth/clothcartlist/`,{
                 author: user
             })
             .then((response) => {
@@ -29,7 +29,7 @@ const CartList = () => {
 
     const handleCartDelete=async(id)=>{
       // console.log('delete cart')
-      await axios.post('http://127.0.0.1:8000/cloth/cartlistdelete/', {
+      await axios.post('https://enamulhaque.pythonanywhere.com/cloth/cartlistdelete/', {
         product_id: id,
         author: user,
         })
@@ -45,7 +45,7 @@ const CartList = () => {
     }
 
     const handleCheckOut=async()=>{
-      await axios.post('http://127.0.0.1:8000/cloth/clothcartlistcheckout/', {
+      await axios.post('https://enamulhaque.pythonanywhere.com/cloth/clothcartlistcheckout/', {
         clothList: clothCarts,
         author: user,
         })

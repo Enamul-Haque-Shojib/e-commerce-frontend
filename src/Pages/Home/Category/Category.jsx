@@ -23,7 +23,7 @@ const Category = () => {
     // console.log(cats);
     
     useEffect(() => {
-        fetch('http://127.0.0.1:8000/cloth/category/')
+        fetch('https://enamulhaque.pythonanywhere.com/cloth/category/')
         .then((response) => response.json())
         .then((data) => {
           // console.log(data);

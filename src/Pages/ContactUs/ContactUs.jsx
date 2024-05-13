@@ -19,7 +19,7 @@ const ContactUs = () => {
     return (
         <div>
             <h1>Contact us</h1>
-            {/* <div style={{ height: '500px', width: '500px' }}>
+             {/* <div style={{ height: '500px', width: '500px' }}>
       <GoogleMapReact
         bootstrapURLKeys={{ key: googleApiKey }}
         defaultCenter={defaultProps.center}
@@ -31,7 +31,7 @@ const ContactUs = () => {
           text="My Marker"
         />
       </GoogleMapReact>
-    </div> */}
+    </div>  */}
         </div>
     );
 };

@@ -11,7 +11,7 @@ const Reviews = ({clothid, name}) => {
 
     useEffect(() =>{
         const fun=async()=>{
-            await axios.post('http://127.0.0.1:8000/cloth/clothreviews/', {
+            await axios.post('https://enamulhaque.pythonanywhere.com/cloth/clothreviews/', {
             product_id: clothid,
             product_name: name,
             author: user

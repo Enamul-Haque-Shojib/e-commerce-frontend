@@ -13,7 +13,7 @@ const Navbar = () => {
     const token = JSON.parse(localStorage.getItem('token'));
 
 // console.log(token);
-    const logout = "http://127.0.0.1:8000/author/logout/";
+    const logout = "https://enamulhaque.pythonanywhere.com/author/logout/";
 
   fetch(logout,{
     method: 'GET',
@@ -72,7 +72,7 @@ const Navbar = () => {
   <div className="navbar-end">
   {user && <li><Link to='/profile'>{
                   userImage ? 
-                  <small><img className="w-8 h-8 rounded-full" src={`http://127.0.0.1:8000/${profileImage}`} alt="Album"/></small>
+                  <small><img className="w-8 h-8 rounded-full" src={`https://enamulhaque.pythonanywhere.com/${profileImage}`} alt="Album"/></small>
                   :
 
                   <small><img src={profileImage} alt="Album"/></small>

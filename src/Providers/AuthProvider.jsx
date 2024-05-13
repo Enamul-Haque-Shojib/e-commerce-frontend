@@ -20,7 +20,7 @@ const AuthProvider = ({children}) => {
     useEffect(() => {
         
         
-        fetch('http://127.0.0.1:8000/author/user/',{
+        fetch('https://enamulhaque.pythonanywhere.com/author/user/',{
             method: 'GET',
             headers:{
               'Authorization': token,

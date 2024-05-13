@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 const Cloth = ({cloth}) => {
     
     const {clothid,name, image, price, quantity, rating} = cloth;
+    console.log(image)
     return (
         <div className="text-base">
            

@@ -36,7 +36,7 @@ import ResetPssNew from "../Pages/ForgotPassword/ResetPssNew";
         {
             path:'list/:id',
             element:<ClothDetails></ClothDetails>,
-            loader: ({params}) => fetch(`http://127.0.0.1:8000/cloth/list/${params.id}/`)
+            loader: ({params}) => fetch(`https://enamulhaque.pythonanywhere.com/cloth/list/${params.id}/`)
         },
         {
           path:'profile',

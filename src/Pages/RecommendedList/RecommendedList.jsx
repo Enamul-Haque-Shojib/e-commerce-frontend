@@ -6,7 +6,7 @@ import axios from "axios";
 const RecommendedList = ({category}) => {
     useEffect(()=>{
         const fun=async()=>{
-            await axios.get(`http://127.0.0.1:8000/cloth/list/?search=${category}`, {
+            await axios.get(`https://enamulhaque.pythonanywhere.com/cloth/list/?search=${category}`, {
         })
         .then((response) => {
             console.log(response);

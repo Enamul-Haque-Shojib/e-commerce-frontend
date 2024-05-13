@@ -13,7 +13,7 @@ const SignUp = () => {
         const confirm_password = event.target.confirm_password.value;
         const usersignup = {username, first_name, last_name, email, password, confirm_password}
         // console.log('Helo->', username, password);
-        const signup = "http://127.0.0.1:8000/author/register/";
+        const signup = "https://enamulhaque.pythonanywhere.com/author/register/";
     
       // fetch(login, {
       //   method: "POST",

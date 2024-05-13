@@ -21,7 +21,7 @@ const Login = () => {
 
 
 
-        const login = "http://127.0.0.1:8000/author/login/";
+        const login = "https://enamulhaque.pythonanywhere.com/author/login/";
     
         fetch(login, {
           method: "POST",

@@ -8,7 +8,7 @@ const ResetPassEmail = () => {
         const email = event.target.email.value;
         // console.log(email)
         const resetPassEmailData = {email}
-        const resetPassEmailUrl = "http://127.0.0.1:8000/author/resetpassemail/";
+        const resetPassEmailUrl = "https://enamulhaque.pythonanywhere.com/author/resetpassemail/";
       await axios.post(resetPassEmailUrl, resetPassEmailData)
             .then((response) => {
                 console.log(response.data);

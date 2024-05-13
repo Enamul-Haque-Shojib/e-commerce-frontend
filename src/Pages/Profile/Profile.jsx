@@ -19,7 +19,7 @@ const Profile = () => {
           form_data.append('profile_image', image);
           form_data.append('author', user);
           console.log(form_data);
-          let url = 'http://127.0.0.1:8000/author/uploadprofile/';
+          let url = 'https://enamulhaque.pythonanywhere.com/author/uploadprofile/';
           axios.post(url, form_data, {
             headers: {
               'content-type': 'multipart/form-data'
@@ -73,7 +73,7 @@ const Profile = () => {
               <div>
                 {
                   userImage ? 
-                  <figure><img src={`http://127.0.0.1:8000/${profileImage}`} alt="Album"/></figure>
+                  <figure><img src={`https://enamulhaque.pythonanywhere.com/${profileImage}`} alt="Album"/></figure>
                   :
 
                   <figure><img src={profileImage} alt="Album"/></figure>

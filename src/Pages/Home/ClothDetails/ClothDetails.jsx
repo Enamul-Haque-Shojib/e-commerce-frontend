@@ -28,7 +28,7 @@ const ClothDetails = () => {
         const n = num-1;
         setNum(n)
         // console.log("Cart");
-        await axios.post('http://127.0.0.1:8000/cloth/addcartlist/', {
+        await axios.post('https://enamulhaque.pythonanywhere.com/cloth/addcartlist/', {
             product_id: clothid,
             author: user,
             quan : n
@@ -44,7 +44,7 @@ const ClothDetails = () => {
     const handleAddToWish = async(e) =>{
         e.preventDefault();
         // console.log("wish");
-        await axios.post('http://127.0.0.1:8000/cloth/addwishlist/', {
+        await axios.post('https://enamulhaque.pythonanywhere.com/cloth/addwishlist/', {
         product_id: clothid,
         author: user
         })

@@ -6,7 +6,8 @@ const Clothes = () => {
     const [cloths, setCloths] = useState([]);
     // console.log(cloths);
     useEffect(()=>{
-        fetch('http://127.0.0.1:8000/cloth/list/')
+        // fetch('http://127.0.0.1:8000/cloth/list/')
+        fetch('https://enamulhaque.pythonanywhere.com/cloth/list/')
         .then(res=>res.json())
         .then(data=>{
             setCloths(data)

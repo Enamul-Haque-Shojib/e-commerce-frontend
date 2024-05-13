@@ -14,7 +14,7 @@ const ResetPssNew = () => {
         if (new_password === confirm_password){
           resetPassNewData = {confirm_password}
           console.log(resetPassNewData)
-          const resetPassNewUrl = `http://127.0.0.1:8000/author/resetpassnew/${uid}/${token}`;
+          const resetPassNewUrl = `https://enamulhaque.pythonanywhere.com/author/resetpassnew/${uid}/${token}`;
           await axios.post(resetPassNewUrl, resetPassNewData)
             .then((response) => {
                 console.log(response.data);
