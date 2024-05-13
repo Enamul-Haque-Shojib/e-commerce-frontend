@@ -6,7 +6,7 @@ const Footer = () => {
         <div>
             <footer className="footer p-10 bg-base-200 text-base-content">
   <aside>
-  <Link to='/' className="decoration-0"><h5 className="text-white text-2xl">Shohoj Bazar</h5></Link>
+  <Link to='/' className="decoration-0"><h5 className="text-white text-2xl">ClickCart</h5></Link>
   </aside> 
   <nav className="flex">
   <Link to="https://twitter.com/" target="_blank" className="decoration-0 text-white"><i className="fa-brands fa-x-twitter"></i></Link>
