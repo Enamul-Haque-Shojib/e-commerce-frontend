@@ -4,13 +4,14 @@ import Cloth from "../Cloth/Cloth";
 
 const Clothes = () => {
     const [cloths, setCloths] = useState([]);
-    // console.log(cloths);
+    console.log('newe>>>>>>>>>>>>>>>',cloths);
     useEffect(()=>{
         // fetch('http://127.0.0.1:8000/cloth/list/')
-        fetch('https://enamulhaque.pythonanywhere.com/cloth/list/')
+        fetch('https://click-cart-bzwk.onrender.com/api/v1/products/products/')
         .then(res=>res.json())
         .then(data=>{
             setCloths(data)
+
         })
         .catch((err) => {
             console.log(err);

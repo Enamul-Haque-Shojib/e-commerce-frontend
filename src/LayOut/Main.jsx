@@ -8,9 +8,10 @@ const Main = () => {
     const location = useLocation();
     // console.log(location);
     const noHeaderFooter = location.pathname.includes('login') || location.pathname.includes('signup');
+    const noHeader = location.pathname.includes('dashboard');
     return (
         <div>
-            {noHeaderFooter  || <Navbar></Navbar>}
+            {noHeaderFooter || noHeader || <Navbar></Navbar>}
             {/* <Navbar></Navbar> */}
             <Outlet></Outlet>
             {/* <Footer></Footer> */}

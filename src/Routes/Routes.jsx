@@ -17,6 +17,7 @@ import ContactUs from "../Pages/ContactUs/ContactUs";
 import UpdateProfile from "../Pages/UpdateProfile/UpdateProfile";
 import ResetPassEmail from "../Pages/ForgotPassword/ResetPassEmail";
 import ResetPssNew from "../Pages/ForgotPassword/ResetPssNew";
+import Dashboard from "../Pages/Dashboard";
 
 
 
@@ -75,6 +76,12 @@ import ResetPssNew from "../Pages/ForgotPassword/ResetPssNew";
           path:'updateprofile',
           element:<PrivateRoutes>
             <UpdateProfile></UpdateProfile>
+          </PrivateRoutes>
+        },
+        {
+          path:'dashboard',
+          element:<PrivateRoutes>
+            <Dashboard></Dashboard>
           </PrivateRoutes>
         },
         {
