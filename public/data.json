@@ -1,0 +1,37 @@
+[
+    {
+      "clothid": 1,
+      "name": "Full Sleve T-Shirt 1",
+      "price": 345.89,
+      "rating": 4.5,
+      "image": "https://unsplash.com/photos/black-and-orange-nike-polo-shirt-N0ke5zChVBU"
+    },
+    {
+      "clothid": 2,
+      "name": "Full Sleve T-Shirt 2",
+      "price": 345.89,
+      "rating": 4.5,
+      "image": "https://unsplash.com/photos/black-and-orange-nike-polo-shirt-N0ke5zChVBU"
+    },
+    {
+      "clothid": 3,
+      "name": "Full Sleve T-Shirt 3",
+      "price": 345.89,
+      "rating": 4.5,
+      "image": "https://unsplash.com/photos/black-and-orange-nike-polo-shirt-N0ke5zChVBU"
+    },
+    {
+      "clothid": 4,
+      "name": "Full Sleve T-Shirt 4",
+      "price": 345.89,
+      "rating": 4.5,
+      "image": "https://unsplash.com/photos/black-and-orange-nike-polo-shirt-N0ke5zChVBU"
+    },
+    {
+      "clothid": 5,
+      "name": "Full Sleve T-Shirt 5",
+      "price": 345.89,
+      "rating": 4.5,
+      "image": "https://unsplash.com/photos/black-and-array-nike-polo-shirt-N0ke5zChVBU"
+    }
+  ]

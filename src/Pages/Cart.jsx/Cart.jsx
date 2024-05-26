@@ -4,6 +4,7 @@ import { AuthContext } from "../../Providers/AuthProvider";
 
 
 const Cart = ({cart, handleCartDelete}) => {
+  
   const {user} = useContext(AuthContext);
     const {id, clothid, image, name, quantity, price} = cart;
     // console.log(clothid, id)

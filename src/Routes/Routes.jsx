@@ -36,7 +36,7 @@ import ResetPssNew from "../Pages/ForgotPassword/ResetPssNew";
         {
             path:'list/:id',
             element:<ClothDetails></ClothDetails>,
-            loader: ({params}) => fetch(`https://enamulhaque.pythonanywhere.com/cloth/list/${params.id}/`)
+            loader: ({params}) => {fetch(`data.json/${params.id}/`)
         },
         {
           path:'profile',
@@ -87,6 +87,7 @@ import ResetPssNew from "../Pages/ForgotPassword/ResetPssNew";
           path:'resetpassnew/:uid/:token',
           element:<ResetPssNew></ResetPssNew>
         },
+        
       ]
     },
   ]);
