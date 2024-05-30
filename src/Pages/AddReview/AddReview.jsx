@@ -13,7 +13,7 @@ const AddReview = ({clothid, name}) => {
         const ratings = form.ratings.value;
         // console.log(body, ratings);
 
-        await axios.post('https://enamulhaque.pythonanywhere.com/cloth/addreview/', {
+        await axios.post('https://e-commerce-backend-8r60.onrender.com/cloth/addreview/', {
         product_id: clothid,
         product_name: name,
         author: user,

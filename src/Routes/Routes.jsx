@@ -37,7 +37,7 @@ import Dashboard from "../Pages/Dashboard";
         {
             path:'list/:id',
             element:<ClothDetails></ClothDetails>,
-            loader: ({params}) => fetch(`https://enamulhaque.pythonanywhere.com/cloth/list/${params.id}/`)
+            loader: ({params}) => fetch(`https://e-commerce-backend-8r60.onrender.com/cloth/list/${params.id}/`)
         },
         {
           path:'profile',

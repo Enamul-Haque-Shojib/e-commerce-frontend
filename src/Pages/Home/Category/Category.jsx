@@ -23,7 +23,7 @@ const Category = () => {
     // console.log(cats);
     
     useEffect(() => {
-        fetch('https://enamulhaque.pythonanywhere.com/cloth/category/')
+        fetch('https://e-commerce-backend-8r60.onrender.com/cloth/category/')
         .then((response) => response.json())
         .then((data) => {
           // console.log(data);

@@ -19,7 +19,7 @@ const Cart = ({cart, handleCartDelete}) => {
         //   setQuan(n);
         // } 
        if(quan >0){
-        await axios.post('https://enamulhaque.pythonanywhere.com/cloth/addcartlistminus/', {
+        await axios.post('https://e-commerce-backend-8r60.onrender.com/cloth/addcartlistminus/', {
           product_id: clothid,
           author: user,
           // quan : n
@@ -46,7 +46,7 @@ const Cart = ({cart, handleCartDelete}) => {
         // }
         // ---------------------------->>>>>>>
        
-        await axios.post('https://enamulhaque.pythonanywhere.com/cloth/addcartlistplus/', {
+        await axios.post('https://e-commerce-backend-8r60.onrender.com/cloth/addcartlistplus/', {
           product_id: clothid,
           author: user,
           // quan : n
@@ -90,7 +90,7 @@ const Cart = ({cart, handleCartDelete}) => {
           <div className="flex items-center gap-3">
             <div className="avatar">
               <div className="mask mask-squircle w-12 h-12">
-                <img src={`https://enamulhaque.pythonanywhere.com/${image}/`} alt="Avatar Tailwind CSS Component" />
+                <img src={`https://e-commerce-backend-8r60.onrender.com/${image}/`} alt="Avatar Tailwind CSS Component" />
               </div>
             </div>
             <div>

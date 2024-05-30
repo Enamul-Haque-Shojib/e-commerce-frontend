@@ -120,7 +120,7 @@ const AuthProvider = ({children}) => {
     
     const handlingLogout =()=>{
     
-      const logout = "https://enamulhaque.pythonanywhere.com/author/logout/";
+      const logout = "https://e-commerce-backend-8r60.onrender.com/author/logout/";
   
     fetch(logout,{
       method: 'GET',
@@ -149,7 +149,7 @@ const AuthProvider = ({children}) => {
     useEffect(() => {
         
         
-        fetch('https://enamulhaque.pythonanywhere.com/author/user/',{
+        fetch('https://e-commerce-backend-8r60.onrender.com/author/user/',{
             method: 'GET',
             headers:{
               'Authorization': token,

@@ -22,7 +22,7 @@ const UpdateProfile = () => {
   
       const updateProfileData = {author, username, first_name, last_name, email}
       // console.log('Helo->', username, password);
-      const profileUpdate = "https://enamulhaque.pythonanywhere.com/author/updateprofile/";
+      const profileUpdate = "https://e-commerce-backend-8r60.onrender.com/author/updateprofile/";
     await axios.post(profileUpdate, updateProfileData)
           .then((response) => {
               // console.log(response.data); 
@@ -54,7 +54,7 @@ const UpdateProfile = () => {
       const changePassData = {author, old_password, new_password}
       // console.log(changePassData);
 
-      const changePassUrl = "https://enamulhaque.pythonanywhere.com/author/changepass/";
+      const changePassUrl = "https://e-commerce-backend-8r60.onrender.com/author/changepass/";
     await axios.post(changePassUrl, changePassData)
           .then((response) => {
               console.log('>>>>>>>>>>>>>>>>passord>>>>>>>>>>>>>',response); 

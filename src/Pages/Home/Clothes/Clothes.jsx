@@ -7,7 +7,8 @@ const Clothes = () => {
     console.log('newe>>>>>>>>>>>>>>>',cloths);
     useEffect(()=>{
         // fetch('http://127.0.0.1:8000/cloth/list/')
-        fetch('https://click-cart-bzwk.onrender.com/api/v1/products/products/')
+        // fetch('https://click-cart-bzwk.onrender.com/api/v1/products/products/')
+        fetch('https://e-commerce-backend-8r60.onrender.com/cloth/list/')
         .then(res=>res.json())
         .then(data=>{
             setCloths(data)

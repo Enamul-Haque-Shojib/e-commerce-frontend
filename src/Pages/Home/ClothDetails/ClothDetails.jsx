@@ -28,7 +28,7 @@ const ClothDetails = () => {
         const n = num-1;
         setNum(n)
         // console.log("Cart");
-        await axios.post('https://enamulhaque.pythonanywhere.com/cloth/addcartlist/', {
+        await axios.post('https://e-commerce-backend-8r60.onrender.com/cloth/addcartlist/', {
             product_id: clothid,
             author: user,
             quan : n
@@ -44,7 +44,7 @@ const ClothDetails = () => {
     const handleAddToWish = async(e) =>{
         e.preventDefault();
         // console.log("wish");
-        await axios.post('https://enamulhaque.pythonanywhere.com/cloth/addwishlist/', {
+        await axios.post('https://e-commerce-backend-8r60.onrender.com/cloth/addwishlist/', {
         product_id: clothid,
         author: user
         })

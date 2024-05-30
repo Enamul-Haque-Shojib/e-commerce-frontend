@@ -13,7 +13,7 @@ const SignUp = () => {
         const confirm_password = event.target.confirm_password.value;
         const usersignup = {username, first_name, last_name, email, password, confirm_password}
         // console.log('Helo->', username, password);
-        const signup = "https://enamulhaque.pythonanywhere.com/author/register/";
+        const signup = "https://e-commerce-backend-8r60.onrender.com/author/register/";
     
       // fetch(login, {
       //   method: "POST",

@@ -12,7 +12,7 @@ const CartList = () => {
     // console.log('>>>>>>>>>>>',clothCarts);
     useEffect(()=>{
         const clothWishFunction=async()=>{
-            await axios.post(`https://enamulhaque.pythonanywhere.com/cloth/clothcartlist/`,{
+            await axios.post(`https://e-commerce-backend-8r60.onrender.com/cloth/clothcartlist/`,{
                 author: user
             })
             .then((response) => {
@@ -29,7 +29,7 @@ const CartList = () => {
 
     const handleCartDelete=async(id)=>{
       // console.log('delete cart')
-      await axios.post('https://enamulhaque.pythonanywhere.com/cloth/cartlistdelete/', {
+      await axios.post('https://e-commerce-backend-8r60.onrender.com/cloth/cartlistdelete/', {
         product_id: id,
         author: user,
         })
@@ -45,7 +45,7 @@ const CartList = () => {
     }
 
     const handleCheckOut=async()=>{
-      await axios.post('https://enamulhaque.pythonanywhere.com/cloth/clothcartlistcheckout/', {
+      await axios.post('https://e-commerce-backend-8r60.onrender.com/cloth/clothcartlistcheckout/', {
         clothList: clothCarts,
         author: user,
         })

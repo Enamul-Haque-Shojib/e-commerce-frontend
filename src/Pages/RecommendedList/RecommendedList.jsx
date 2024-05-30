@@ -6,7 +6,7 @@ import axios from "axios";
 const RecommendedList = ({category}) => {
     useEffect(()=>{
         const fun=async()=>{
-            await axios.get(`https://enamulhaque.pythonanywhere.com/cloth/list/?search=${category}`, {
+            await axios.get(`https://e-commerce-backend-8r60.onrender.com/cloth/list/?search=${category}`, {
         })
         .then((response) => {
             console.log(response);

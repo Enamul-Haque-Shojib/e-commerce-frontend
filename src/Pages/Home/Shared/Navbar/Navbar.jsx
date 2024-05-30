@@ -140,7 +140,7 @@ const Navbar = () => {
         <div className="w-10 rounded-full">
           {
             userImage ? 
-            <img alt="Tailwind CSS Navbar component" src={`https://enamulhaque.pythonanywhere.com/${profileImage}`} />
+            <img alt="Tailwind CSS Navbar component" src={`https://e-commerce-backend-8r60.onrender.com/${profileImage}`} />
             :
             <img alt="Tailwind CSS Navbar component" src={profileImage} />
           }

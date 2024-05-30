@@ -11,7 +11,7 @@ const Reviews = ({clothid, name}) => {
 
     useEffect(() =>{
         const fun=async()=>{
-            await axios.post('https://enamulhaque.pythonanywhere.com/cloth/clothreviews/', {
+            await axios.post('https://e-commerce-backend-8r60.onrender.com/cloth/clothreviews/', {
             product_id: clothid,
             product_name: name,
             author: user
