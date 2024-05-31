@@ -31,7 +31,7 @@ import ResetPssNew from "../Pages/ForgotPassword/ResetPssNew";
         },
         {
             path:'about',
-            element:<About></About>
+            element:<About></About>,
         },
         {
             path:'list/:id',
@@ -40,16 +40,15 @@ import ResetPssNew from "../Pages/ForgotPassword/ResetPssNew";
         },
         {
           path:'profile',
-          element:<PrivateRoutes
-          ><Profile></Profile></PrivateRoutes>
+          element:<Profile></Profile>,
         },
         {
           path:'wishlist',
-          element:<PrivateRoutes><WishList></WishList></PrivateRoutes>
+          element:  <WishList></WishList> 
         },
         {
           path:'cartlist',
-          element:<PrivateRoutes><CartList></CartList></PrivateRoutes>
+          element:  <CartList></CartList> 
         },
         {
           path:'login',
@@ -73,9 +72,9 @@ import ResetPssNew from "../Pages/ForgotPassword/ResetPssNew";
         },
         {
           path:'updateprofile',
-          element:<PrivateRoutes>
+          element:  
             <UpdateProfile></UpdateProfile>
-          </PrivateRoutes>
+           
         },
         {
           path:'resetpassemail',
