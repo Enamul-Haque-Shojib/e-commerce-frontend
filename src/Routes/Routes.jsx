@@ -18,6 +18,7 @@ import UpdateProfile from "../Pages/UpdateProfile/UpdateProfile";
 import ResetPassEmail from "../Pages/ForgotPassword/ResetPassEmail";
 import ResetPssNew from "../Pages/ForgotPassword/ResetPssNew";
 import Dashboard from "../Pages/Dashboard";
+import ProductForm from "../Pages/ProductForm/ProductForm";
 
 
 
@@ -93,6 +94,10 @@ import Dashboard from "../Pages/Dashboard";
         {
           path:'resetpassnew/:uid/:token',
           element:<ResetPssNew></ResetPssNew>
+        },
+        {
+          path:'productform',
+          element:<ProductForm></ProductForm>
         },
       ]
     },

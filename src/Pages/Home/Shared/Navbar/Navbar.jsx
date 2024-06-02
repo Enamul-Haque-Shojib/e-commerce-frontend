@@ -62,6 +62,7 @@ const Navbar = () => {
       <li><Link to='/'>Home</Link></li>
       <li><Link to='/about'>About</Link></li>
       <li><Link to='/contactus'>Contact Us</Link></li>
+      <li><Link to='/productform'>Product Form</Link></li>
       {user && <li><Link to='/dashboard'>Dashboard</Link></li>}
       {/* {user && <li><Link to='/wishlist'>Wish List</Link></li>}
       {user && <li><Link to='/cartlist'>Cart List</Link></li>} */}

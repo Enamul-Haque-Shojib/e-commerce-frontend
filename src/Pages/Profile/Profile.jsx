@@ -7,6 +7,7 @@ import axios from "axios";
 const Profile = () => {
     const {profileImage, setProfileImage ,profile, user, userImage, setUserImage} = useContext(AuthContext);
 
+
     // console.log(profile)
 
     const [image, setImage] = useState(null)
@@ -18,15 +19,17 @@ const Profile = () => {
           let form_data = new FormData();
           form_data.append('profile_image', image);
           form_data.append('author', user);
-          console.log(form_data);
+          // console.log(form_data);
           let url = 'https://e-commerce-backend-8r60.onrender.com/author/uploadprofile/';
+          
+          // let url = 'http://127.0.0.1:8000/author/uploadprofile/';
           axios.post(url, form_data, {
             headers: {
               'content-type': 'multipart/form-data'
             }
           })
               .then(res => {
-                console.log(res.data.profile_image);
+                // console.log(res.data.profile_image);
                 setProfileImage(res.data.profile_image)
               })
               .catch(err => console.log(err))
@@ -34,6 +37,7 @@ const Profile = () => {
     
         const handleImageChange = (e) => {
           const profile_image = e.target.files[0];
+          // console.log(profile_image)
           setImage(profile_image)
           setUserImage(true)
         };
@@ -96,3 +100,4 @@ const Profile = () => {
 };
 
 export default Profile;
+
