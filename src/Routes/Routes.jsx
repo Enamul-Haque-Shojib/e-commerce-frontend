@@ -19,6 +19,8 @@ import ResetPassEmail from "../Pages/ForgotPassword/ResetPassEmail";
 import ResetPssNew from "../Pages/ForgotPassword/ResetPssNew";
 import Dashboard from "../Pages/Dashboard";
 import ProductForm from "../Pages/ProductForm/ProductForm";
+import Products from "../Pages/ProductForm/Products";
+import UpdateProduct from "../Pages/ProductForm/UpdateProduct";
 
 
 
@@ -99,6 +101,19 @@ import ProductForm from "../Pages/ProductForm/ProductForm";
           path:'productform',
           element:<ProductForm></ProductForm>
         },
+        {
+          path:'products',
+          element:<Products></Products>
+        },
+        {
+          path:'updateproducts',
+          
+        },
+        {
+          path:'products/:id',
+          element:<UpdateProduct></UpdateProduct>,
+          loader: ({params}) => fetch(`http://127.0.0.1:8000/api/v1/products/${params.id}/`)
+      },
       ]
     },
   ]);
